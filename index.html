@@ -199,8 +199,8 @@
 
   <!-- ================= MASTERPLAN ================= -->
   <section class="masterplan" aria-labelledby="masterplan-title">
-    <div class="media bg-parallax" data-label="mapa-condominio.jpg" data-speed="0.2">
-      <img src="assets/mapa-condominio.jpg" alt="Vista aérea do masterplan do Jardins Genebra com os lotes" width="1920" height="1100" loading="lazy" decoding="async">
+    <div class="media bg-parallax" data-label="mapa-condominio-v2.jpg" data-speed="0.2">
+      <img src="assets/mapa-condominio-v2.jpg" alt="Vista aérea do masterplan do Jardins Genebra com os lotes" width="1920" height="1080" loading="lazy" decoding="async">
     </div>
     <div class="overlay"></div>
     <div class="container masterplan__inner">
@@ -359,8 +359,28 @@
 </footer>
 
 <!-- ================= AÇÕES FLUTUANTES ================= -->
+<!-- ================= CHAT DO CRM =================
+     Painel flutuante que abre ao clicar no botão de chat.
+     O iframe só carrega na primeira abertura (data-src), para não pesar
+     o carregamento da página nem pedir câmera/microfone sem necessidade. -->
+<div class="crm-chat" id="crm-chat" role="dialog" aria-modal="false" aria-labelledby="crm-chat-title" hidden>
+  <div class="crm-chat__header">
+    <span class="crm-chat__title" id="crm-chat-title">Fale com um consultor</span>
+    <button class="crm-chat__close" type="button" aria-label="Fechar chat"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <iframe
+    class="crm-chat__frame"
+    title="Chat com a equipe do Jardins Genebra"
+    data-src="https://crm.jardinsgenebrabrasilia.com.br/widget?website_token=L2qBj5ybo49RagDRi8PREWx9&amp;api_base=https%3A%2F%2Fapi-crm.jardinsgenebrabrasilia.com.br"
+    allow="camera; microphone; clipboard-write"
+    referrerpolicy="strict-origin-when-cross-origin"
+    loading="lazy"
+  ></iframe>
+</div>
+
 <div class="float-actions">
   <a class="to-top" href="#topo" aria-label="Voltar ao topo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+  <button class="chat-float" type="button" aria-controls="crm-chat" aria-expanded="false" aria-label="Abrir chat com um consultor"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4H6.5A2.5 2.5 0 0 1 4 13.5z"/><path d="M8.5 9.5h.01M12 9.5h.01M15.5 9.5h.01"/></svg></button>
   <!-- WhatsApp oficial: (61) 99927-0059 -->
   <a class="wa-float" href="https://wa.me/5561999270059?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Condom%C3%ADnio%20Jardins%20Genebra%21" data-whatsapp target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><img class="icon wa-icon" src="assets/whatsapp.png" alt="" aria-hidden="true" width="160" height="161"></a>
 </div>

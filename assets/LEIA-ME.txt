@@ -11,7 +11,7 @@ quadra.jpg               Grid – Quadras de esporte — JÁ INCLUÍDA  1600 x 1
 area-festas.jpg          Grid – Área de Festas — JÁ INCLUÍDA  1600 x 1195
 area-kids.jpg            Grid – Área Kids — JÁ INCLUÍDA  1600 x 1195
 paisagem-natural.jpg     Grid – Paisagem natural — JÁ INCLUÍDA  1600 x 1195
-mapa-condominio.jpg      Masterplan — JÁ INCLUÍDA       1920 x 1080
+mapa-condominio-v2.jpg   Masterplan — JÁ INCLUÍDA       1920 x 1080
 portaria.jpg             Portaria e acessos — JÁ INCLUÍDA        1400 px
 parque.jpg               Praças e convivência — JÁ INCLUÍDA      1400 px
 lazer.jpg                Lazer para toda a família — JÁ INCLUÍDA 1400 px
