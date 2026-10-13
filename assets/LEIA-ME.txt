@@ -1,0 +1,33 @@
+PASTA /assets — IMAGENS DA LANDING PAGE JARDINS GENEBRA
+
+Salve as fotos aqui com EXATAMENTE estes nomes. Assim que o arquivo existir,
+ele aparece no lugar do placeholder (sem mexer no código).
+
+ARQUIVO                  SEÇÃO                          TAMANHO SUGERIDO
+hero.jpg                 Hero (topo) — JÁ INCLUÍDA      1920 x 900
+detalhes.jpg             "Onde cada detalhe..." — JÁ INCLUÍDA  1600 x 1198
+paisagem.jpg             "Paisagismo..." — JÁ INCLUÍDA  1920 x 1438
+quadra.jpg               Grid – Quadras de esporte — JÁ INCLUÍDA  1600 x 1195
+area-festas.jpg          Grid – Área de Festas — JÁ INCLUÍDA  1600 x 1195
+area-kids.jpg            Grid – Área Kids — JÁ INCLUÍDA  1600 x 1195
+paisagem-natural.jpg     Grid – Paisagem natural — JÁ INCLUÍDA  1600 x 1195
+mapa-condominio.jpg      Masterplan — JÁ INCLUÍDA       1920 x 1080
+portaria.jpg             Portaria e acessos — JÁ INCLUÍDA        1400 px
+parque.jpg               Praças e convivência — JÁ INCLUÍDA      1400 px
+lazer.jpg                Lazer para toda a família — JÁ INCLUÍDA 1400 px
+paisagismo.jpg           Arte e paisagismo — JÁ INCLUÍDA         1400 px
+esporte.jpg              Estrutura esportiva completa — JÁ INCLUÍDA  1400 px
+formulario-bg.jpg        Fundo do formulário — JÁ INCLUÍDA  1920 x 1072
+logo-branca.png          Logo branca (header e formulário) — JÁ INCLUÍDA
+logo-colorida.png        Logo colorida (rodapé) — JÁ INCLUÍDA
+
+DICAS
+- Exporte em JPG qualidade ~75–80% (ou WebP) — idealmente < 300 KB cada.
+- Para trocar a extensão (ex.: .webp), altere o atributo src no index.html.
+- Fotos do grid ficam em preto e branco e ganham cor no hover
+  (no celular/tablet, ao rolar a página). Envie as fotos coloridas.
+- Logo: se receber a versão em SVG, troque o src dos <img> da logo no
+  index.html. O tamanho de cada uso é ajustado por --logo-h no style.css.
+- Imagens responsivas: se quiser servir versões menores no celular, adicione
+  srcset/sizes no <img>, ex.:
+  srcset="assets/hero-800.jpg 800w, assets/hero.jpg 2400w" sizes="100vw"

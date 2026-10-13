@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jardins Genebra | O privilégio de viver bem</title>
+  <meta name="description" content="Jardins Genebra: condomínio com paisagismo, lazer completo e conexão com a natureza. Agende uma visita.">
+  <meta name="theme-color" content="#6fae96">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="topo">
+  <div class="container site-header__inner">
+    <!-- Logo branca (sobre fundo escuro) -->
+    <a class="logo" href="#topo">
+      <img src="assets/logo-branca.png" alt="Jardins Genebra — início" width="640" height="206" fetchpriority="high">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+      <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Menu (fora do header para o painel fixo funcionar quando o header se esconde) -->
+<nav class="main-nav" id="menu-principal" aria-label="Menu principal">
+  <ul>
+    <li><a href="#o-condominio">O condomínio</a></li>
+    <li><a href="#diferenciais">Diferenciais</a></li>
+    <li><a href="#lazer">Lazer</a></li>
+    <li><a href="#depoimentos">Depoimentos</a></li>
+    <li><a href="#estrutura">Estrutura</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a class="btn" href="#contato">Agende uma visita</a>
+</nav>
+<button class="nav-backdrop" type="button" tabindex="-1" aria-hidden="true"></button>
+
+<main id="conteudo">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="media bg-parallax" data-label="hero.jpg" data-speed="0.25">
+      <img src="assets/hero.jpg" alt="Vista aérea da portaria do Jardins Genebra ao pôr do sol" width="1920" height="1080" fetchpriority="high" decoding="async">
+    </div>
+    <div class="overlay"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title" id="hero-title">O privilégio de viver bem</h1>
+      <!-- TEXTO A CONFIRMAR: ilegível no protótipo -->
+      <p class="hero__text">Um condomínio exclusivo, onde paisagismo, conforto e natureza se encontram para criar uma experiência única de morar.</p>
+      <a class="btn btn--ghost" href="#contato">Atendimento personalizado</a>
+    </div>
+    <a class="scroll-cue" href="#o-condominio" aria-label="Rolar para o conteúdo">
+      <span class="scroll-cue__label" aria-hidden="true">Role</span>
+      <span class="scroll-cue__line" aria-hidden="true"></span>
+    </a>
+  </section>
+
+  <!-- ================= TEXTO + IMAGEM ================= -->
+  <section class="split" id="o-condominio" aria-labelledby="split-title">
+    <div class="split__content">
+      <div class="split__inner" data-reveal="left">
+        <h2 class="split__title" id="split-title">Onde cada detalhe tem um propósito</h2>
+        <!-- Texto conforme o protótipo em alta resolução -->
+        <div class="split__text">
+          <p>Cada detalhe do Jardins Genebra foi desenvolvido para proporcionar equilíbrio entre sofisticação, natureza e conforto.</p>
+          <p>Um projeto que valoriza espaços bem planejados, ambientes acolhedores e uma atmosfera de tranquilidade para transformar a rotina em uma experiência especial.</p>
+        </div>
+        <a class="btn" href="#contato">Agende uma visita</a>
+      </div>
+    </div>
+    <div class="media split__media" data-label="detalhes.jpg" data-reveal="zoom">
+      <img src="assets/detalhes.jpg" alt="Vista aérea das quadras de tênis de saibro do Jardins Genebra" width="1600" height="1198" loading="lazy" decoding="async">
+    </div>
+  </section>
+
+  <!-- ================= PAISAGISMO ================= -->
+  <section class="feature-banner" aria-labelledby="paisagismo-title">
+    <div class="media bg-parallax" data-label="paisagem.jpg" data-speed="0.18">
+      <img src="assets/paisagem.jpg" alt="Vista aérea da portaria e do paisagismo do Jardins Genebra" width="1920" height="1438" loading="lazy" decoding="async">
+    </div>
+    <div class="overlay"></div>
+    <div class="container feature-banner__content" data-reveal>
+      <svg class="icon feature-banner__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 17a4.5 4.5 0 0 1-1-8.9A5 5 0 0 1 17 7a4.5 4.5 0 0 1 0 10H8z"/><path d="M12 21v-9M12 14.5l-2.5-2.5M12 16l2.5-2.5"/></svg>
+      <h2 class="feature-banner__title" id="paisagismo-title">Paisagismo de tirar o fôlego</h2>
+      <!-- TEXTO A CONFIRMAR -->
+      <p class="feature-banner__text">No Jardins Genebra, cada espaço foi pensado para proporcionar beleza, tranquilidade e uma conexão única com a natureza.</p>
+      <a class="btn btn--ghost" href="#contato">Agende uma visita</a>
+    </div>
+  </section>
+
+  <!-- ================= DIFERENCIAIS (CARDS) ================= -->
+  <section class="section highlights" id="diferenciais" aria-labelledby="diferenciais-title">
+    <div class="container">
+      <h2 class="highlights__title" id="diferenciais-title" data-reveal>Diferenciais pensados <span class="text-accent">exclusivamente</span> para você!</h2>
+
+      <!-- Diferenciais propostos pela agência — VALIDAR com o cliente.
+           Todos os cards ficam cinza; o verde aparece no hover (e na rolagem no celular/tablet). -->
+      <div class="cards" data-stagger>
+        <article class="card" data-reveal>
+          <svg class="icon card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <div class="card__divider"></div>
+          <h3 class="card__title">Segurança e tranquilidade</h3>
+          <p class="card__text">Portaria com controle de acesso para você e sua família viverem o dia a dia com mais privacidade e tranquilidade.</p>
+        </article>
+        <article class="card" data-reveal>
+          <svg class="icon card__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z"/><path d="M5 19l8-8"/></svg>
+          <div class="card__divider"></div>
+          <h3 class="card__title">Natureza e paisagismo</h3>
+          <p class="card__text">Áreas verdes, paisagismo planejado e vista aberta para a paisagem natural em cada canto do condomínio.</p>
+        </article>
+        <article class="card" data-reveal>
+          <svg class="icon card__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.6 5.6c3 2.8 3 10 0 12.8M18.4 5.6c-3 2.8-3 10 0 12.8"/></svg>
+          <div class="card__divider"></div>
+          <h3 class="card__title">Lazer completo</h3>
+          <p class="card__text">Quadras esportivas, academia, área kids e espaços de convivência para todas as idades, sem sair de casa.</p>
+        </article>
+      </div>
+
+      <a class="btn" href="#contato" data-reveal>Agende uma visita</a>
+    </div>
+  </section>
+
+  <!-- ================= GRID DE EXPERIÊNCIAS ================= -->
+  <section class="experiences" id="lazer" aria-label="Espaços de lazer" data-stagger>
+    <article class="tile tile--sport" data-reveal="zoom">
+      <div class="media" data-label="quadra.jpg"><img src="assets/quadra.jpg" alt="Pai e filha jogando basquete na quadra poliesportiva" width="1600" height="1195" loading="lazy" decoding="async"><img class="tile__gray" src="assets/quadra.jpg" alt="" aria-hidden="true" width="1600" height="1195" loading="lazy" decoding="async"></div>
+      <div class="overlay"></div>
+      <div class="tile__caption">
+        <svg class="icon tile__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.6 5.6c3 2.8 3 10 0 12.8M18.4 5.6c-3 2.8-3 10 0 12.8"/></svg>
+        <h3 class="tile__title">Quadras de esporte</h3>
+      </div>
+    </article>
+    <article class="tile tile--party" data-reveal="zoom">
+      <div class="media" data-label="area-festas.jpg"><img src="assets/area-festas.jpg" alt="Moradores reunidos no salão de festas" width="1600" height="1195" loading="lazy" decoding="async"><img class="tile__gray" src="assets/area-festas.jpg" alt="" aria-hidden="true" width="1600" height="1195" loading="lazy" decoding="async"></div>
+      <div class="overlay"></div>
+      <div class="tile__caption">
+        <svg class="icon tile__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18a7 7 0 0 1 14 0M12 11V8.5M10 8.5h4"/></svg>
+        <h3 class="tile__title">Área de Festas</h3>
+      </div>
+    </article>
+    <article class="tile tile--kids" data-reveal="zoom">
+      <div class="media" data-label="area-kids.jpg"><img src="assets/area-kids.jpg" alt="Crianças e pais brincando na área kids" width="1600" height="1195" loading="lazy" decoding="async"><img class="tile__gray" src="assets/area-kids.jpg" alt="" aria-hidden="true" width="1600" height="1195" loading="lazy" decoding="async"></div>
+      <div class="overlay"></div>
+      <div class="tile__caption">
+        <svg class="icon tile__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15h16v3H4zM7 15l1.5-5h7L17 15"/><circle cx="8" cy="19.5" r="1.3"/><circle cx="16" cy="19.5" r="1.3"/></svg>
+        <h3 class="tile__title">Área Kids</h3>
+      </div>
+    </article>
+    <article class="tile tile--nature" data-reveal="zoom">
+      <div class="media" data-label="paisagem-natural.jpg"><img src="assets/paisagem-natural.jpg" alt="Família contemplando a paisagem natural do mirante" width="1600" height="1195" loading="lazy" decoding="async"><img class="tile__gray" src="assets/paisagem-natural.jpg" alt="" aria-hidden="true" width="1600" height="1195" loading="lazy" decoding="async"></div>
+      <div class="overlay"></div>
+      <div class="tile__caption">
+        <svg class="icon tile__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19l6-9 4 6 3-4 5 7z"/><circle cx="16.5" cy="6" r="1.6"/></svg>
+        <h3 class="tile__title">Paisagem natural</h3>
+      </div>
+    </article>
+  </section>
+
+  <!-- ================= DEPOIMENTOS ================= -->
+  <section class="section testimonials" id="depoimentos" aria-labelledby="depoimentos-title">
+    <div class="media testimonials__bg" aria-hidden="true"><img src="assets/portaria.jpg" alt="" width="1400" height="1048" loading="lazy" decoding="async"></div>
+    <div class="container">
+      <h2 class="testimonials__title" id="depoimentos-title" data-reveal>Experiências que falam por si</h2>
+
+      <!-- Depoimentos aprovados pelas pessoas citadas -->
+      <div class="quotes" data-stagger>
+        <figure class="quote" data-reveal>
+          <blockquote class="quote__text">Escolhemos o Jardins Genebra pela tranquilidade e pela natureza em volta. Cada vez que chegamos pela portaria, temos a certeza de que fizemos a escolha certa.</blockquote>
+          <figcaption class="quote__footer"><cite class="quote__name">Túlio Lelis</cite><span class="stars"><span class="sr-only">5 de 5 estrelas</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg></span></figcaption>
+        </figure>
+        <figure class="quote" data-reveal>
+          <blockquote class="quote__text">O paisagismo é ainda mais bonito do que nas fotos. É um lugar pensado nos detalhes, onde dá vontade de passar o dia ao ar livre.</blockquote>
+          <figcaption class="quote__footer"><cite class="quote__name">Cynara Ganne</cite><span class="stars"><span class="sr-only">5 de 5 estrelas</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg></span></figcaption>
+        </figure>
+        <figure class="quote" data-reveal>
+          <blockquote class="quote__text">Gosto da estrutura de lazer: as quadras, a academia e os espaços de convivência fazem o condomínio ter vida própria.</blockquote>
+          <figcaption class="quote__footer"><cite class="quote__name">Edgard</cite><span class="stars"><span class="sr-only">5 de 5 estrelas</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg></span></figcaption>
+        </figure>
+        <figure class="quote" data-reveal>
+          <blockquote class="quote__text">Atendimento atencioso do início ao fim. Senti segurança em cada etapa da compra e hoje recomendo para amigos e família.</blockquote>
+          <figcaption class="quote__footer"><cite class="quote__name">Fernando</cite><span class="stars"><span class="sr-only">5 de 5 estrelas</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.6.7-5 4.5 1.4 6.6L12 17.2l-5.9 3.3 1.4-6.6-5-4.5 6.6-.7z"/></svg></span></figcaption>
+        </figure>
+      </div>
+
+      <a class="btn" href="#contato" data-reveal>Agende uma visita</a>
+    </div>
+  </section>
+
+  <!-- ================= MASTERPLAN ================= -->
+  <section class="masterplan" aria-labelledby="masterplan-title">
+    <div class="media bg-parallax" data-label="mapa-condominio.jpg" data-speed="0.2">
+      <img src="assets/mapa-condominio.jpg" alt="Vista aérea do masterplan do Jardins Genebra com os lotes" width="1920" height="1100" loading="lazy" decoding="async">
+    </div>
+    <div class="overlay"></div>
+    <div class="container masterplan__inner">
+      <!-- NÚMERO A CONFIRMAR com o cliente. O contador anima de 0 até data-count. -->
+      <h2 class="masterplan__number" id="masterplan-title" data-reveal="left">+<span data-count="506">506</span> mil m<sup>2</sup><br>de área total</h2>
+      <div class="masterplan__aside" data-reveal="right">
+        <!-- TEXTO A CONFIRMAR -->
+        <p>Um espaço planejado em cada detalhe para viver com mais tranquilidade, conforto e conexão com a natureza.</p>
+        <a class="btn btn--outline" href="#contato">Agende uma visita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIFERENCIAIS DETALHADOS ================= -->
+  <!-- TEXTOS DESTA SEÇÃO A CONFIRMAR: ilegíveis no protótipo -->
+  <section class="section details" id="estrutura" aria-label="Estrutura do condomínio">
+    <div class="container details__list">
+      <article class="detail detail--1" data-reveal>
+        <div class="detail__body">
+          <span class="detail__badge" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/></svg></span>
+          <h3 class="detail__title">Portaria e acessos</h3>
+          <p class="detail__text">Portaria com cabine de acesso e administração, além de entradas social e de serviço segregadas para mais fluidez e segurança.</p>
+        </div>
+        <div class="media detail__media" data-label="portaria.jpg"><img src="assets/portaria.jpg" alt="Portaria do condomínio" width="1400" height="1048" loading="lazy" decoding="async"></div>
+      </article>
+
+      <article class="detail detail--2" data-reveal>
+        <div class="detail__body">
+          <span class="detail__badge" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M12 14v7M8 21h8"/></svg></span>
+          <h3 class="detail__title">Praças e convivência</h3>
+          <p class="detail__text">Praças pensadas para eventos, encontros e apresentações culturais, além de espaços de convivência integrados ao paisagismo.</p>
+        </div>
+        <div class="media detail__media" data-label="parque.jpg"><img src="assets/parque.jpg" alt="Praça de convivência com paisagismo vista do alto" width="1400" height="1045" loading="lazy" decoding="async"></div>
+      </article>
+
+      <article class="detail detail--3" data-reveal>
+        <div class="detail__body">
+          <span class="detail__badge" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0M14.5 19a3.5 3.5 0 0 1 6.5-1.8"/></svg></span>
+          <h3 class="detail__title">Lazer para toda a família</h3>
+          <p class="detail__text">Academia completa, espaço kids, playground e ambientes de lazer pensados para todas as idades, do dia a dia aos fins de semana.</p>
+        </div>
+        <div class="media detail__media" data-label="lazer.jpg"><img src="assets/lazer.jpg" alt="Academia do condomínio" width="1400" height="782" loading="lazy" decoding="async"></div>
+      </article>
+
+      <article class="detail detail--4" data-reveal>
+        <div class="detail__body">
+          <span class="detail__badge" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z"/><path d="M5 19l8-8"/></svg></span>
+          <h3 class="detail__title">Arte e paisagismo</h3>
+          <p class="detail__text">Obras de arte e paisagismo integrados aos espaços, com caminhos arborizados e áreas de contemplação.</p>
+        </div>
+        <div class="media detail__media" data-label="paisagismo.jpg"><img src="assets/paisagismo.jpg" alt="Caminho arborizado com palmeiras" width="1400" height="1048" loading="lazy" decoding="async"></div>
+      </article>
+
+      <article class="detail detail--5" data-reveal>
+        <div class="detail__body">
+          <span class="detail__badge" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7l-1-3h-5z"/></svg></span>
+          <h3 class="detail__title">Estrutura esportiva completa</h3>
+          <p class="detail__text">Campo de futebol society em grama sintética, quadra poliesportiva, quadras de tênis e de areia, com espaços de apoio e convivência.</p>
+        </div>
+        <div class="media detail__media" data-label="esporte.jpg"><img src="assets/esporte.jpg" alt="Campo de futebol society em grama sintética" width="1400" height="782" loading="lazy" decoding="async"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= FORMULÁRIO ================= -->
+  <section class="contact" id="contato" aria-labelledby="contato-title">
+    <div class="media bg-parallax" data-label="formulario-bg.jpg" data-speed="0.15">
+      <img src="assets/formulario-bg.jpg" alt="" width="1920" height="1072" loading="lazy" decoding="async">
+    </div>
+    <div class="overlay"></div>
+    <div class="container contact__inner">
+      <div class="contact__intro" data-reveal="left">
+        <svg class="icon contact__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3.5 21l1.4-4.9A8.5 8.5 0 1 1 21 12z"/></svg>
+        <h2 class="contact__title" id="contato-title">Fale com um de<br>nossos consultores</h2>
+      </div>
+
+      <!-- Ao enviar, abre o WhatsApp (61) 99927-0059 com os dados preenchidos. Ver script.js -->
+      <form class="form-card" action="#" method="post" novalidate data-reveal="right">
+        <div class="logo">
+          <img src="assets/logo-branca.png" alt="" width="640" height="206" loading="lazy" decoding="async">
+        </div>
+
+        <div class="form-fields">
+          <div class="field">
+            <input id="nome" name="nome" type="text" autocomplete="name" required minlength="3" placeholder="Seu nome completo" aria-describedby="nome-erro">
+            <label for="nome">Nome*</label>
+            <span class="field__error" id="nome-erro" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="voce@email.com" aria-describedby="email-erro">
+            <label for="email">E-mail*</label>
+            <span class="field__error" id="email-erro" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(00) 00000-0000" aria-describedby="telefone-erro">
+            <label for="telefone">Telefone*</label>
+            <span class="field__error" id="telefone-erro" aria-live="polite"></span>
+          </div>
+          <!-- Anti-spam simples (honeypot): fica invisível para pessoas -->
+          <div class="sr-only" aria-hidden="true"><label for="empresa">Empresa</label><input id="empresa" name="empresa" type="text" tabindex="-1" autocomplete="off"></div>
+
+          <button class="btn" type="submit"><span class="btn__spinner" aria-hidden="true"></span><span class="btn__label">Enviar</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="form-success" tabindex="-1">
+          <span class="form-success__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+          <h3>Quase lá!</h3>
+          <p>Abrimos o WhatsApp com seus dados preenchidos. É só tocar em enviar para falar com um de nossos consultores.</p>
+          <a class="btn" href="https://wa.me/5561999270059" target="_blank" rel="noopener" data-wa-link>Abrir WhatsApp</a>
+          <button class="form-success__reset" type="button" data-form-reset>Preencher novamente</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div data-reveal>
+      <!-- Logo colorida (sobre fundo claro) -->
+      <a class="logo" href="#topo">
+        <img src="assets/logo-colorida.png" alt="Jardins Genebra — voltar ao topo" width="640" height="206" loading="lazy" decoding="async">
+      </a>
+      <p class="footer__tagline">Conforto, natureza e exclusividade em perfeita harmonia.</p>
+      <div class="social">
+        <a href="https://www.instagram.com/jardinsgenebraoficialv" target="_blank" rel="noopener" aria-label="Instagram do Jardins Genebra"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg></a>
+        <a href="https://wa.me/5561999270059?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Condom%C3%ADnio%20Jardins%20Genebra%21" target="_blank" rel="noopener" data-whatsapp aria-label="WhatsApp do Jardins Genebra"><img class="icon wa-icon" src="assets/whatsapp.png" alt="" aria-hidden="true" width="160" height="161"></a>
+      </div>
+    </div>
+
+    <nav aria-label="Menu do rodapé" data-reveal>
+      <h2 class="footer__heading">Menu</h2>
+      <ul class="footer__links">
+        <li><a href="#o-condominio">O condomínio</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#lazer">Lazer</a></li>
+        <li><a href="#estrutura">Estrutura</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__cta" data-reveal>
+      <h2>Comece a sua<br>nova história aqui!</h2>
+      <a class="btn" href="#contato">Agende uma visita</a>
+    </div>
+  </div>
+
+  <div class="footer__bar">
+    <div class="container">
+      <p>Copyright © <span data-year>2026</span> Jardins Genebra | Feito por <a href="https://conceptagencia.com.br" target="_blank" rel="noopener">Concept Agência</a></p>
+      <p class="footer__legal"><a href="#">Termos de uso</a> | <a href="#">Política de privacidade</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= AÇÕES FLUTUANTES ================= -->
+<div class="float-actions">
+  <a class="to-top" href="#topo" aria-label="Voltar ao topo"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+  <!-- WhatsApp oficial: (61) 99927-0059 -->
+  <a class="wa-float" href="https://wa.me/5561999270059?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Condom%C3%ADnio%20Jardins%20Genebra%21" data-whatsapp target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><img class="icon wa-icon" src="assets/whatsapp.png" alt="" aria-hidden="true" width="160" height="161"></a>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
