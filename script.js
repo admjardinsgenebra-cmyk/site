@@ -202,6 +202,26 @@
     btn.addEventListener('pointerleave', function (e) { setOrigin(btn, e); });
   });
 
+  /* 7c. CHAT DO CRM: painel flutuante, iframe carregado só na 1ª abertura */
+  var chatBtn = $('.chat-float');
+  var chatPanel = $('#crm-chat');
+  if (chatBtn && chatPanel) {
+    var chatFrame = $('.crm-chat__frame', chatPanel);
+    var setChat = function (open) {
+      if (open && !chatFrame.src) chatFrame.src = chatFrame.getAttribute('data-src');
+      chatPanel.hidden = !open;
+      chatBtn.setAttribute('aria-expanded', String(open));
+      chatBtn.setAttribute('aria-label', open ? 'Fechar chat' : 'Abrir chat com um consultor');
+      document.body.classList.toggle('chat-open', open && window.innerWidth <= 576);
+      if (open) $('.crm-chat__close', chatPanel).focus(); else chatBtn.focus();
+    };
+    chatBtn.addEventListener('click', function () { setChat(chatPanel.hidden); });
+    $('.crm-chat__close', chatPanel).addEventListener('click', function () { setChat(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !chatPanel.hidden) setChat(false);
+    });
+  }
+
   /* 8. FORMULÁRIO (envio pelo WhatsApp) ----------------------------------- */
   var WHATSAPP_URL = 'https://wa.me/5561999270059';
   var form = $('.form-card');
