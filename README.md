@@ -57,7 +57,7 @@ git push -u origin main
    - **Docker Context Path:** `.`
 5. Clique em **Deploy** e acompanhe o log até concluir.
 6. Na aba **Domains**, adicione o domínio:
-   - **Host:** ex. `jardinsgenebra.com.br`
+   - **Host:** `jardinsgenebrabrasilia.com.br`
    - **Container Port:** `80`
    - **HTTPS:** ligado, certificado **letsencrypt**
 7. No provedor do domínio, crie um registro **A** apontando para o IP do servidor do Dokploy
@@ -74,10 +74,12 @@ inclui as regras de cache, compressão e segurança do `nginx.conf`.
 
 | O quê | Onde |
 |---|---|
-| Número do WhatsApp (botões e formulário) | `index.html` (links `wa.me/5561999270059`) e `script.js` (`WHATSAPP_URL`) |
+| Número do WhatsApp (botões e formulário) | `index.html` (links `wa.me/5561995331213`) e `script.js` (`WHATSAPP_URL`) |
 | Mensagem padrão do WhatsApp | `index.html` (parâmetro `?text=` dos links) e `script.js` (variável `msg`) |
 | Link do Instagram | `index.html`, rodapé |
 | Trocar imagens | `assets/` (mesmos nomes de arquivo) — ver `assets/LEIA-ME.txt` |
+| Favicon | `favicon.ico` (raiz), `assets/favicon-32.png`, `assets/apple-touch-icon.png`, `assets/icon-192.png`, `assets/icon-512.png` |
+| Imagem de compartilhamento | `assets/og-image.jpg` (1200 x 630) e o domínio nas tags `og:` do `index.html` |
 
 > Após alterar `style.css` ou `script.js`, o navegador pode manter a versão antiga
 > por até 1 hora (cache). Para forçar na hora, mude a referência no `index.html`,

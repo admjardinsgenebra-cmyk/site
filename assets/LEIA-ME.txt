@@ -20,6 +20,8 @@ esporte.jpg              Estrutura esportiva completa — JÁ INCLUÍDA  1400 px
 formulario-bg.jpg        Fundo do formulário — JÁ INCLUÍDA  1920 x 1072
 logo-branca.png          Logo branca (header e formulário) — JÁ INCLUÍDA
 logo-colorida.png        Logo colorida (rodapé) — JÁ INCLUÍDA
+og-image.jpg             Compartilhamento (WhatsApp/redes) — JÁ INCLUÍDA  1200 x 630
+favicon-32.png / apple-touch-icon.png / icon-192.png / icon-512.png — ícone da aba e do celular — JÁ INCLUÍDOS (favicon.ico fica na raiz)
 
 DICAS
 - Exporte em JPG qualidade ~75–80% (ou WebP) — idealmente < 300 KB cada.

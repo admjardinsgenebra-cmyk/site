@@ -203,7 +203,7 @@
   });
 
   /* 8. FORMULÁRIO (envio pelo WhatsApp) ----------------------------------- */
-  var WHATSAPP_URL = 'https://wa.me/5561999270059';
+  var WHATSAPP_URL = 'https://wa.me/5561995331213';
   var form = $('.form-card');
   var phone = $('#telefone');
   var status = $('.form-status', form);
